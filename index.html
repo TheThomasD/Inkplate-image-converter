@@ -21,7 +21,7 @@
                     <hr>
                     <p>Select desired color depth:</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="depth" id="1bit" value="1bit" checked />
+                        <input class="form-check-input" type="radio" name="depth" id="1bit" value="1bit" />
                         <label class="form-check-label" for="1bit"> BW (1 bit) colors </label>
                     </div>
                     <div class="form-check">
@@ -29,7 +29,7 @@
                         <label class="form-check-label" for="3bit"> Gray (3 bit) colors </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="depth" id="rb" value="rb" />
+                        <input class="form-check-input" type="radio" name="depth" id="rb" value="rb" checked />
                         <label class="form-check-label" for="rb"> Red & Black </label>
                     </div>
                     <div class="form-check">
@@ -70,9 +70,9 @@
                         <label class="form-check-label" for="toResize"> Resize </label>
                     </div>
                     <div class="form-group" style="padding-top: 15px">
-                        <input type="number" min="1" max="800" id="width" onchange="resize()" />
+                        <input type="number" min="1" max="800" id="width" onchange="resize_w()" />
                         <label for="width">width</label><br />
-                        <input type="number" min="1" max="600" disabled="true" id="height" />
+                        <input type="number" min="1" max="600" id="height" onchange="resize_h()" />
                         <label for="height">height</label><br />
                     </div>
 

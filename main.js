@@ -124,9 +124,14 @@ function checkResize() {
     document.getElementById("width").disabled = !document.getElementById("toResize").checked;
 }
 
-function resize() {
+function resize_w() {
     let ratio = parseInt(preview.height) / parseInt(preview.width);
     document.getElementById("height").value = parseInt(document.getElementById("width").value * ratio);
+}
+
+function resize_h() {
+    let ratio = parseInt(preview.width) / parseInt(preview.height);
+    document.getElementById("width").value = parseInt(document.getElementById("height").value * ratio);
 }
 
 function checkDither() {
